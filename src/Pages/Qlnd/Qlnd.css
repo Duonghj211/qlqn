@@ -1,0 +1,94 @@
+/* src/Pages/Qlnd/Qlnd.css */
+
+.qlnd {
+    display: flex;
+    height: 100vh; /* Chiều cao toàn bộ viewport */
+  }
+  
+  .qlnd-left {
+    width: 250px; /* Chiều rộng của cột bên trái */
+    background: #000; /* Màu nền của cột bên trái */
+    color: #fff; /* Màu chữ của cột bên trái */
+    padding: 20px; /* Padding bên trong cột */
+    box-sizing: border-box; /* Bao gồm padding trong chiều rộng */
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    justify-content: space-between; /* Phân bổ khoảng cách giữa các phần tử */
+  }
+  
+  .qlnd-left img {
+    width: 90px; /* Kích thước hình ảnh người dùng */
+    border-radius: 50%; /* Hình tròn cho hình ảnh người dùng */
+  }
+  
+  .qlnd-left .user {
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    margin-bottom: 2rem; /* Khoảng cách dưới của khối người dùng */
+  }
+  
+  .qlnd-left .user p {
+    margin-left: 10px; /* Khoảng cách bên trái của văn bản */
+    font-size: 1.2rem; /* Kích thước chữ */
+  }
+  
+  .qlnd-left ul {
+    list-style: none; /* Xóa dấu chấm của danh sách */
+    padding: 0; /* Xóa padding của danh sách */
+    margin: 0; /* Xóa margin của danh sách */
+  }
+  
+  .qlnd-left li {
+    margin: 1rem 0; /* Khoảng cách giữa các mục */
+    padding: 10px; /* Padding bên trong mỗi mục */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+    border-radius: 5px; /* Bo tròn các góc của mục */
+  }
+  
+  .qlnd-left li:hover {
+    background: #333; /* Màu nền khi hover */
+  }
+  
+  .qlnd-left a {
+    color: #fff; /* Màu chữ của liên kết */
+    text-decoration: none; /* Xóa gạch chân của liên kết */
+  }
+  
+  .qlnd-left .key {
+    background: #333; /* Màu nền của mục "key" */
+    color: #fff; /* Màu chữ của mục "key" */
+    font-weight: bold; /* Chữ đậm hơn cho mục "key" */
+  }
+  
+  .qlnd-right {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    padding: 20px; /* Padding xung quanh nội dung */
+    box-sizing: border-box; /* Bao gồm padding trong chiều rộng */
+    overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá dài */
+    background: #f4f4f4; /* Màu nền của phần bên phải */
+  }
+  
+  .qlnd-right h2 {
+    margin-top: 0; /* Xóa margin trên cùng của tiêu đề */
+  }
+  
+  .qlnd-right .user-card {
+    background: #fff; /* Màu nền của các thẻ nội dung */
+    border-radius: 8px; /* Bo tròn các góc của thẻ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho thẻ */
+    padding: 20px; /* Padding bên trong thẻ */
+    margin-bottom: 20px; /* Khoảng cách dưới của mỗi thẻ */
+  }
+  
+  .qlnd-right .user-card h3 {
+    margin: 0; /* Xóa margin trên cùng của tiêu đề */
+    font-size: 1.2rem; /* Kích thước chữ của tiêu đề */
+  }
+  
+  .qlnd-right .user-card p {
+    margin: 10px 0 0; /* Khoảng cách trên của đoạn văn */
+    color: #555; /* Màu chữ của đoạn văn */
+  }
+  

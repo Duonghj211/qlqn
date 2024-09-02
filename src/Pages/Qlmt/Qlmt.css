@@ -1,0 +1,93 @@
+/* src/Pages/Qlmt/Qlmt.css */
+
+.qlmt {
+  display: flex;
+  height: 100vh; /* Chiều cao toàn bộ viewport */
+}
+
+.qlmt-left {
+  width: 250px; /* Chiều rộng của cột bên trái */
+  background: #000; /* Màu nền của cột bên trái */
+  color: #fff; /* Màu chữ của cột bên trái */
+  padding: 20px; /* Padding bên trong cột */
+  box-sizing: border-box; /* Bao gồm padding trong chiều rộng */
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+  justify-content: space-between; /* Phân bổ khoảng cách giữa các phần tử */
+}
+
+.qlmt-left img {
+  width: 90px; /* Kích thước hình ảnh người dùng */
+  border-radius: 50%; /* Hình tròn cho hình ảnh người dùng */
+}
+
+.qlmt-left .user {
+  display: flex;
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  margin-bottom: 2rem; /* Khoảng cách dưới của khối người dùng */
+}
+
+.qlmt-left .user p {
+  margin-left: 10px; /* Khoảng cách bên trái của văn bản */
+  font-size: 1.2rem; /* Kích thước chữ */
+}
+
+.qlmt-left ul {
+  list-style: none; /* Xóa dấu chấm của danh sách */
+  padding: 0; /* Xóa padding của danh sách */
+  margin: 0; /* Xóa margin của danh sách */
+}
+
+.qlmt-left li {
+  margin: 1rem 0; /* Khoảng cách giữa các mục */
+  padding: 10px; /* Padding bên trong mỗi mục */
+  cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+  border-radius: 5px; /* Bo tròn các góc của mục */
+}
+
+.qlmt-left li:hover {
+  background: #333; /* Màu nền khi hover */
+}
+
+.qlmt-left a {
+  color: #fff; /* Màu chữ của liên kết */
+  text-decoration: none; /* Xóa gạch chân của liên kết */
+}
+
+.qlmt-left .key {
+  background: #333; /* Màu nền của mục "key" */
+  color: #fff; /* Màu chữ của mục "key" */
+  font-weight: bold; /* Chữ đậm hơn cho mục "key" */
+}
+
+.qlmt-right {
+  flex: 1; /* Chiếm toàn bộ không gian còn lại */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Tạo lưới tự động điều chỉnh */
+  gap: 10px; /* Khoảng cách giữa các phần tử trong lưới */
+  padding: 20px; /* Padding xung quanh nội dung */
+  box-sizing: border-box; /* Bao gồm padding trong chiều rộng */
+  overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá dài */
+}
+
+.may1 {
+  text-align: center; /* Căn giữa nội dung bên trong */
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 10px;
+  box-sizing: border-box; 
+}
+.may1.open {
+  background-color: #d4edda; 
+  color: #155724; 
+}
+
+.may1.close {
+  background-color: #f8d7da;
+  color: #721c24; 
+}
+.may1 img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
